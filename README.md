@@ -19,81 +19,21 @@ The goal of the project is to provide a simple, yet powerful system to preproces
 
   ```
   python -m pip install -r requirements.txt
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Run the backend script via
 
   ```
   cd app/ && python ./application/app.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Install the frontend dependencies via
 
   ```
   cd /react-app/frontend && npm install (only once needed)
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Run the frontend script
 
   ```
   cd /react-app/frontend && npm start
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * The webapp should now be available under the link (default: http://localhost:5000)
 
@@ -103,140 +43,35 @@ The goal of the project is to provide a simple, yet powerful system to preproces
 
   ```
   python -m pip install -r requirements.txt
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Run the parser script to obtain the `itis.graph`,`tpl.graph` and `wfo.graph` files. The script expect thre Darwin Core Archieve files (itis.zip, tpl.zip, WFO_Backbone.zip) located in the `/app/taxa/` folder. The `parser_main.py` script will run all parsers asynchronous.
 
   ```
   cd app && python parser_main.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 
   Alternatively, it is possible to run the individual parsers separately.
 
   ```
   cd app && python parser_itis.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 
   ```
-  cd app && python parser_tpl.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  cd app && python parser_tpl.py  
   ```
 
   ```
   cd app && python parser_wfo.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Run the merger script to obtain the `generated.graph` file. The script expects three files (itis.graph, tpl.graph, wfo.graph) produced by the parsers, located in the same `/app/application/` folder.
 
   ```
   cd app/ && PYTHONPATH=$(pwd) python ./application/merger.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Run the exporter script to obtain the skos `out.ttl` file.
 
   ```
   cd app/ && PYTHONPATH=$(pwd) python ./application/SkosExport.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 
 > Note: The exporter provides no status update. The process can take more then half an hour even on powerful hardware.
@@ -254,35 +89,11 @@ Skosify divides his output in warnings and errors. Errors are crucial problems w
   or
   python -m pip install --upgrade skosify
   depending on your OS
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 * Clone the repository and place the, from the exporter created `out.ttl` in the `/app/application/` folder. After that run the following command
 
   ```
   cd app/ && PYTHONPATH=$(pwd) python ./application/skosify_runner.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 
 > The script can run more then an hour! Skosify online outputs
@@ -294,21 +105,6 @@ Skosify divides his output in warnings and errors. Errors are crucial problems w
 
   ```
   PYTHONPATH=$(pwd) python /application/merger.py
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ```
 
 # Documentation
