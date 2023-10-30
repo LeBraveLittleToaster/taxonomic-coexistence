@@ -1,0 +1,5 @@
+python-dwca-reader
+pandas~=1.4.1
+typing~=3.7.4.3
+Flask~=2.0.2
+flask_cors
