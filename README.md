@@ -14,7 +14,7 @@ The goal of the project is to provide a simple, yet powerful system to preproces
 
 ## Quickstart webapp
 
-* Clone the repository, either download the prebuild `generated.graph` (to large for git) and place it in `/app/application` folder or run the merger script as described in the merger section
+* Clone the repository, either download the prebuild `generated.graph` (to large for git) at [Download Link](https://zenodo.org/records/10053663?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImE5M2UxZDQxLTMzMzEtNDRmOC04MGNiLWQ5YjFmY2QxZTU0ZiIsImRhdGEiOnt9LCJyYW5kb20iOiJjODk2ZWM4MjFhMjU4YjRhZDJjMDk2OTE3NTJiZGU3ZSJ9.SXOE-YT5cFpy0UzMs3LXEFB7lPKx8snnt3N9I_LVaovqJIIRaiCDlByieOMizj-BSHM1jq5LGLA-e6225U4-9w) and place it in `/app/application` folder or run the merger script as described in the merger section
 * Install the needed Python version (see above) and install the requirements via the requirement files
 
   ```
