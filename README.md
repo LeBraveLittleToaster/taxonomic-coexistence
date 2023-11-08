@@ -1,3 +1,8 @@
+
+
+
+<video src="https://github.com/LeBraveLittleToaster/taxonomic-coexistence/assets/28644346/21d8991d-0503-4534-85af-c5ca4c28df78"></video>
+
 # Quick Start Guide
 
 The goal of the project is to provide a simple, yet powerful system to preprocess, link and serve botanical taxonomic data. This is achieved by a preprocessing stage consisting of a parser and merger script as well as a flask/react.js based web application.
